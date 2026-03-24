@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisdom School | Learn With Direction</title>
+    <meta
+      name="description"
+      content="Wisdom School is a modern educational platform for admissions, teacher applications, student progress, and school-wide communication."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#home">
+          <span class="brand-mark">WS</span>
+          <span>
+            <strong>Wisdom School</strong>
+            <small>Learn With Direction</small>
+          </span>
+        </a>
+
+        <nav class="top-nav">
+          <a href="#about">About</a>
+          <a href="#admissions">Admissions</a>
+          <a href="#programs">Programs</a>
+          <a href="#community">Community</a>
+          <a href="#portal">Portal</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="button button-muted" data-jump="teacher-apply">Teach At Wisdom</button>
+          <button class="button" data-jump="student-apply">Apply Now</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-section" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">Admissions Open For New Sessions</p>
+            <h1>A fully guided digital school experience for students, teachers, and families.</h1>
+            <p class="hero-text">
+              Wisdom School combines structured academic pathways, strong teacher support,
+              subject-focused learning, and a modern communication system in one platform.
+              Students can apply online, join class spaces, track assignments, review scores,
+              and stay connected with teachers and school leadership.
+            </p>
+
+            <div class="hero-actions">
+              <button class="button" data-jump="student-apply">Start Student Registration</button>
+              <button class="button button-secondary" data-jump="portal">Open School Portal</button>
+            </div>
+
+            <div class="stats-grid">
+              <article>
+                <strong>12+</strong>
+                <span>Core academic and faith-based tracks</span>
+              </article>
+              <article>
+                <strong>1:1</strong>
+                <span>Teacher-student messaging and support</span>
+              </article>
+              <article>
+                <strong>3</strong>
+                <span>Built-in access levels for students, teachers, and principal</span>
+              </article>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <div class="hero-card spotlight">
+              <p>Why Families Choose Wisdom</p>
+              <ul>
+                <li>Detailed admissions journey with clear next steps</li>
+                <li>Dedicated chat with teachers, class groups, and principal room</li>
+                <li>Visible tasks, lesson summaries, and performance records</li>
+                <li>Teacher matching by grade, course, and subject specialization</li>
+              </ul>
+            </div>
+
+            <div class="hero-card mini-timeline">
+              <span>Admission Journey</span>
+              <ol>
+                <li>Explore the school and programs</li>
+                <li>Submit student or teacher application</li>
+                <li>Receive review confirmation by email</li>
+                <li>Log in to your personal dashboard</li>
+              </ol>
+            </div>
+          </aside>
+        </section>
+
+        <section class="content-section split-layout" id="about">
+          <div>
+            <p class="eyebrow">About Wisdom School</p>
+            <h2>A school platform designed for academic clarity, discipline, and communication.</h2>
+          </div>
+          <div class="rich-copy">
+            <p>
+              Wisdom School is built for families who want a professional, structured, and
+              supportive learning environment. Our platform is not only a school website. It is
+              a digital school front desk, admissions office, classroom assistant, and messaging
+              center combined into one experience.
+            </p>
+            <p>
+              We provide a strong foundation in Mathematics, Science, General Science, Tajweed,
+              Geography, Biology, Computer Studies, Islamiat, English, and other guided subjects.
+              Students are placed by grade and course interest, and teachers are matched based on
+              the exact grades and subjects they can teach.
+            </p>
+          </div>
+        </section>
+
+        <section class="content-section" id="programs">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Programs And Learning Paths</p>
+              <h2>Multi-subject study options with room for school-wide and class-specific learning.</h2>
+            </div>
+            <p>
+              Students can build a balanced plan from academic, technical, and religious learning
+              areas while teachers manage grade fit and subject expertise from the same platform.
+            </p>
+          </div>
+
+          <div class="program-grid">
+            <article class="program-card">
+              <h3>Core Academics</h3>
+              <p>Mathematics, Science, General Science, Geography, Biology, English, and Islamiat.</p>
+            </article>
+            <article class="program-card">
+              <h3>Technology</h3>
+              <p>Computer fundamentals, digital literacy, structured assignments, and progress review.</p>
+            </article>
+            <article class="program-card">
+              <h3>Faith And Language</h3>
+              <p>Tajweed, Quran reading support, character development, and communication practice.</p>
+            </article>
+            <article class="program-card">
+              <h3>Teacher Support</h3>
+              <p>Teacher application intake, grade matching, student selection, and group messaging.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section admissions-section" id="admissions">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Admissions And Applications</p>
+              <h2>Submit a detailed application and continue to the school portal when approved.</h2>
+            </div>
+            <p>
+              The forms below capture the exact information needed for student placement and teacher
+              review while keeping the system lean for a Firebase free plan deployment.
+            </p>
+          </div>
+
+          <div class="forms-grid">
+            <section class="form-card" id="student-apply">
+              <div class="card-head">
+                <span class="pill">Student Admission</span>
+                <h3>Apply as a student</h3>
+                <p>
+                  Fill in your details, preferred grade, and the courses you want to study at Wisdom School.
+                </p>
+              </div>
+
+              <form id="studentForm" class="platform-form">
+                <label>
+                  Full Name
+                  <input type="text" name="name" placeholder="Your full name" required />
+                </label>
+                <label>
+                  Email Address
+                  <input type="email" name="email" placeholder="student@example.com" required />
+                </label>
+                <label>
+                  Phone Number
+                  <input type="tel" name="phone" placeholder="+92 300 0000000" required />
+                </label>
+                <label>
+                  Address
+                  <textarea name="address" rows="3" placeholder="Your home address" required></textarea>
+                </label>
+                <label>
+                  Grade
+                  <select name="grade" required>
+                    <option value="">Select grade</option>
+                    <option>Grade 1</option>
+                    <option>Grade 2</option>
+                    <option>Grade 3</option>
+                    <option>Grade 4</option>
+                    <option>Grade 5</option>
+                    <option>Grade 6</option>
+                    <option>Grade 7</option>
+                    <option>Grade 8</option>
+                    <option>Grade 9</option>
+                    <option>Grade 10</option>
+                    <option>Grade 11</option>
+                    <option>Grade 12</option>
+                  </select>
+                </label>
+                <label>
+                  Subjects You Want To Study
+                  <input
+                    type="text"
+                    name="subjects"
+                    placeholder="Example: Mathematics, Computer, Geography"
+                    required
+                  />
+                </label>
+
+                <fieldset>
+                  <legend>Courses You Want To Study</legend>
+                  <div class="check-grid">
+                    <label><input type="checkbox" name="courses" value="Mathematics" /> Mathematics</label>
+                    <label><input type="checkbox" name="courses" value="Science" /> Science</label>
+                    <label><input type="checkbox" name="courses" value="General Science" /> General Science</label>
+                    <label><input type="checkbox" name="courses" value="Tajweed" /> Tajweed</label>
+                    <label><input type="checkbox" name="courses" value="Geography" /> Geography</label>
+                    <label><input type="checkbox" name="courses" value="Biology" /> Biology</label>
+                    <label><input type="checkbox" name="courses" value="Computer" /> Computer</label>
+                    <label><input type="checkbox" name="courses" value="Islamiat" /> Islamiat</label>
+                    <label><input type="checkbox" name="courses" value="English" /> English</label>
+                  </div>
+                </fieldset>
+
+                <button class="button submit-button" type="submit">Send Student Request</button>
+              </form>
+            </section>
+
+            <section class="form-card" id="teacher-apply">
+              <div class="card-head">
+                <span class="pill">Teacher Application</span>
+                <h3>Apply as a teacher</h3>
+                <p>
+                  Share your teaching qualifications, supported grades, and the subjects you can teach.
+                </p>
+              </div>
+
+              <form id="teacherForm" class="platform-form">
+                <label>
+                  Full Name
+                  <input type="text" name="name" placeholder="Teacher full name" required />
+                </label>
+                <label>
+                  Phone Number
+                  <input type="tel" name="phone" placeholder="+92 300 0000000" required />
+                </label>
+                <label>
+                  Email Address
+                  <input type="email" name="email" placeholder="teacher@example.com" required />
+                </label>
+                <label>
+                  Education / Degree
+                  <input type="text" name="degree" placeholder="BS Mathematics, MA Islamiat" required />
+                </label>
+                <label>
+                  Which Grade Students Can You Teach?
+                  <input type="text" name="grades" placeholder="Example: Grade 6 to Grade 10" required />
+                </label>
+                <label>
+                  Which Course / Subject Can You Teach?
+                  <input
+                    type="text"
+                    name="subjects"
+                    placeholder="Example: Mathematics, Science, Computer"
+                    required
+                  />
+                </label>
+                <button class="button submit-button" type="submit">Send Teacher Application</button>
+              </form>
+            </section>
+          </div>
+        </section>
+
+        <section class="content-section community-section" id="community">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">School Community</p>
+              <h2>Built-in communication spaces for class discussion, teacher guidance, and leadership contact.</h2>
+            </div>
+            <p>
+              Every approved account can join the principal chat, a whole-school general group, and a
+              class group. Teachers can search students by profile name or email and open direct chats.
+            </p>
+          </div>
+
+          <div class="community-grid">
+            <article class="info-panel">
+              <h3>Default School Rooms</h3>
+              <ul>
+                <li>Principal Chat for school-wide announcements and direct support</li>
+                <li>Whole School General Group for community discussion and updates</li>
+                <li>Whole Class General Group for teacher-to-class communication</li>
+              </ul>
+            </article>
+            <article class="info-panel">
+              <h3>Student Dashboard Features</h3>
+              <ul>
+                <li>Modern messenger layout with searchable chat list</li>
+                <li>Task board with status labels</li>
+                <li>Lesson overview cards</li>
+                <li>Score table for recent performance</li>
+              </ul>
+            </article>
+            <article class="info-panel">
+              <h3>Teacher Workspace Features</h3>
+              <ul>
+                <li>Student profile list with grade and course details</li>
+                <li>Ability to select students for teaching</li>
+                <li>Open direct chats from search or profile selection</li>
+                <li>Operate with minimal data writes for the Firebase free plan</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section portal-section" id="portal">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Student And Teacher Portal</p>
+              <h2>Use Google, email/password, or username/password to enter the dashboard.</h2>
+            </div>
+            <p>
+              The interface below is already wired for a local demo mode and can connect to Firebase Auth
+              plus Firestore once you add your project keys.
+            </p>
+          </div>
+
+          <div class="portal-shell">
+            <section class="auth-panel">
+              <div class="card-head">
+                <span class="pill">Portal Access</span>
+                <h3>Login To Wisdom School</h3>
+                <p>Approved students and teachers can sign in and will be redirected to their dashboard.</p>
+              </div>
+
+              <div class="auth-tabs" role="tablist" aria-label="Authentication Methods">
+                <button class="tab-button active" data-auth-tab="google">Google</button>
+                <button class="tab-button" data-auth-tab="email">Email + Password</button>
+                <button class="tab-button" data-auth-tab="username">Username + Password</button>
+              </div>
+
+              <div class="auth-body active" data-auth-panel="google">
+                <p>Use a connected Google account for quick school access.</p>
+                <button class="button full-width" id="googleAuthButton">Continue With Google</button>
+              </div>
+
+              <form class="auth-body" data-auth-panel="email" id="emailAuthForm">
+                <label>
+                  Email Address
+                  <input type="email" name="email" placeholder="student@example.com" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="password" placeholder="Enter password" required />
+                </label>
+                <div class="inline-actions">
+                  <button class="button" type="submit" data-mode="login">Login</button>
+                  <button class="button button-secondary" type="submit" data-mode="signup">Create Account</button>
+                </div>
+              </form>
+
+              <form class="auth-body" data-auth-panel="username" id="usernameAuthForm">
+                <label>
+                  Username
+                  <input type="text" name="username" placeholder="wisdom.student" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="password" placeholder="Enter password" required />
+                </label>
+                <button class="button full-width" type="submit">Login With Username</button>
+              </form>
+
+              <p class="auth-note">
+                Demo accounts:
+                <code>student@wisdom.school</code> /
+                <code>teacher@wisdom.school</code> /
+                <code>principal@wisdom.school</code>
+                with password <code>demo123</code>.
+              </p>
+
+              <div class="admin-access hidden" id="adminAccess">
+                <div class="card-head compact">
+                  <span class="pill">Hidden Admin Access</span>
+                  <h3>Admin Verification</h3>
+                  <p>Enter the simple password to open the administration dashboard.</p>
+                </div>
+
+                <form id="adminAuthForm" class="platform-form">
+                  <label>
+                    Admin Password
+                    <input
+                      type="password"
+                      name="adminPassword"
+                      placeholder="Enter admin password"
+                      required
+                    />
+                  </label>
+                  <button class="button full-width" type="submit">Open Admin Dashboard</button>
+                </form>
+              </div>
+            </section>
+
+            <section class="dashboard-panel hidden" id="dashboardPanel">
+              <div class="dashboard-topbar">
+                <div>
+                  <p class="eyebrow">Portal Dashboard</p>
+                  <h3 id="dashboardTitle">Welcome</h3>
+                </div>
+                <div class="topbar-actions">
+                  <span class="mode-pill" id="dashboardRole">Student</span>
+                  <button class="button button-muted" id="logoutButton">Logout</button>
+                </div>
+              </div>
+
+              <div class="dashboard-grid">
+                <aside class="profile-column">
+                  <div class="profile-card">
+                    <h4>Profile Summary</h4>
+                    <dl id="profileSummary"></dl>
+                  </div>
+                  <div class="profile-card">
+                    <h4>Quick Stats</h4>
+                    <div class="metric-list" id="quickStats"></div>
+                  </div>
+                </aside>
+
+                <section class="main-column">
+                  <div class="panel messenger-panel">
+                    <div class="panel-head">
+                      <div>
+                        <h4>Messenger</h4>
+                        <p>Search by email or profile name, or join default school groups.</p>
+                      </div>
+                    </div>
+
+                    <div class="messenger-layout">
+                      <div class="chat-rail">
+                        <button class="rail-button active" type="button" data-chat-filter="all" aria-label="Chats">💬</button>
+                        <button class="rail-button" type="button" data-chat-filter="groups" aria-label="Groups">#</button>
+                        <button class="rail-button" type="button" data-chat-filter="teachers" aria-label="Teachers">T</button>
+                        <button class="rail-button" type="button" data-chat-filter="students" aria-label="Students">S</button>
+                      </div>
+
+                      <div class="chat-sidebar">
+                        <div class="chat-sidebar-top">
+                          <div>
+                            <strong>Inbox</strong>
+                            <span>Recent conversations</span>
+                          </div>
+                        </div>
+                        <form id="chatSearchForm" class="search-box">
+                          <input
+                            id="chatSearchInput"
+                            type="text"
+                            placeholder="Search profiles by name or email"
+                          />
+                          <button class="button button-muted" type="submit">Add Chat</button>
+                        </form>
+                        <div id="chatList" class="chat-list"></div>
+                      </div>
+
+                      <div class="chat-window">
+                        <div class="chat-header" id="activeChatHeader"></div>
+                        <div class="chat-messages" id="messageFeed"></div>
+                        <form id="messageForm" class="message-form">
+                          <div class="composer-tools">
+                            <button class="composer-icon" id="attachFileButton" type="button" aria-label="Attach file">📎</button>
+                            <button class="composer-icon" type="button" aria-label="Emoji">☺</button>
+                            <button class="composer-icon" type="button" aria-label="Voice">🎤</button>
+                          </div>
+                          <input id="messageInput" type="text" placeholder="Message..." />
+                          <button class="button" type="submit">Send</button>
+                        </form>
+                        <input id="attachmentInput" type="file" class="hidden" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-columns">
+                    <div class="panel">
+                      <div class="panel-head">
+                        <div>
+                          <h4>Tasks</h4>
+                          <p>Track assignments and current status.</p>
+                        </div>
+                      </div>
+                      <div id="tasksList" class="stack-list"></div>
+                    </div>
+
+                    <div class="panel">
+                      <div class="panel-head">
+                        <div>
+                          <h4>Lessons</h4>
+                          <p>Review lesson plans and current study blocks.</p>
+                        </div>
+                      </div>
+                      <div id="lessonsList" class="stack-list"></div>
+                    </div>
+                  </div>
+
+                  <div class="panel">
+                    <div class="panel-head">
+                      <div>
+                        <h4>Scores</h4>
+                        <p>Recent assessment results and achievement data.</p>
+                      </div>
+                    </div>
+                    <div class="table-wrap">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Exam</th>
+                            <th>Score</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody id="scoresTable"></tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="panel hidden" id="teacherPanel">
+                    <div class="panel-head">
+                      <div>
+                        <h4>Student Selection Menu</h4>
+                        <p>Teachers can review student profiles, grade, and course details, then select them for teaching.</p>
+                      </div>
+                    </div>
+                    <div id="teacherStudentList" class="student-directory"></div>
+                    <div class="teacher-actions">
+                      <section class="teacher-section">
+                        <h5>Create Task</h5>
+                        <form id="teacherTaskForm" class="platform-form compact-form">
+                          <label>
+                            Student
+                            <select name="studentId" required></select>
+                          </label>
+                          <label>
+                            Title
+                            <input name="title" placeholder="Assignment name" required />
+                          </label>
+                          <label>
+                            Details
+                            <textarea name="detail" rows="2" placeholder="Describe the task" required></textarea>
+                          </label>
+                          <label>
+                            Status
+                            <select name="status">
+                              <option value="pending">Pending</option>
+                              <option value="in review">In Review</option>
+                              <option value="awaiting approval">Awaiting Approval</option>
+                            </select>
+                          </label>
+                          <button class="button" type="submit">Publish Task</button>
+                        </form>
+                      </section>
+                      <section class="teacher-section">
+                        <h5>Create Lesson</h5>
+                        <form id="teacherLessonForm" class="platform-form compact-form">
+                          <label>
+                            Student
+                            <select name="studentId" required></select>
+                          </label>
+                          <label>
+                            Lesson
+                            <input name="title" placeholder="Lesson name" required />
+                          </label>
+                          <label>
+                            Summary
+                            <textarea name="detail" rows="2" placeholder="Lesson highlights" required></textarea>
+                          </label>
+                          <button class="button" type="submit">Add Lesson</button>
+                        </form>
+                      </section>
+                      <section class="teacher-section">
+                        <h5>Enter Score</h5>
+                        <form id="teacherScoreForm" class="platform-form compact-form">
+                          <label>
+                            Student
+                            <select name="studentId" required></select>
+                          </label>
+                          <label>
+                            Subject
+                            <input name="subject" required />
+                          </label>
+                          <label>
+                            Exam
+                            <input name="exam" required />
+                          </label>
+                          <label>
+                            Score
+                            <input name="score" required />
+                          </label>
+                          <label>
+                            Status
+                            <input name="status" value="Strong" required />
+                          </label>
+                          <button class="button" type="submit">Save Score</button>
+                        </form>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="panel hidden" id="adminPanel">
+                    <div class="panel-head">
+                      <div>
+                        <h4>Admin Control Center</h4>
+                        <p>Review users, approve tasks, assign scores, and message teachers or students from one place.</p>
+                      </div>
+                    </div>
+
+                    <div class="admin-grid">
+                      <section class="admin-section">
+                        <h5>User Details</h5>
+                        <div id="adminUserList" class="stack-list"></div>
+                      </section>
+
+                      <section class="admin-section">
+                        <h5>Task Approval</h5>
+                        <div id="adminTaskList" class="stack-list"></div>
+                      </section>
+
+                      <section class="admin-section">
+                        <h5>Pending Student Applications</h5>
+                        <div id="adminStudentAppList" class="stack-list"></div>
+                      </section>
+
+                      <section class="admin-section">
+                        <h5>Pending Teacher Applications</h5>
+                        <div id="adminTeacherAppList" class="stack-list"></div>
+                      </section>
+
+                      <section class="admin-section">
+                        <h5>Score Entry</h5>
+                        <form id="scoreForm" class="platform-form compact-form">
+                          <label>
+                            Student
+                            <select id="scoreStudent" name="studentId" required></select>
+                          </label>
+                          <label>
+                            Subject
+                            <input type="text" name="subject" placeholder="Mathematics" required />
+                          </label>
+                          <label>
+                            Exam
+                            <input type="text" name="exam" placeholder="Monthly Test" required />
+                          </label>
+                          <label>
+                            Score
+                            <input type="text" name="score" placeholder="95%" required />
+                          </label>
+                          <label>
+                            Status
+                            <input type="text" name="status" placeholder="Excellent" required />
+                          </label>
+                          <button class="button" type="submit">Save Score</button>
+                        </form>
+                      </section>
+
+                      <section class="admin-section">
+                        <h5>Send Message</h5>
+                        <form id="adminMessageForm" class="platform-form compact-form">
+                          <label>
+                            Send To
+                            <select id="adminMessageTarget" name="targetId" required></select>
+                          </label>
+                          <label>
+                            Message
+                            <textarea
+                              name="message"
+                              rows="4"
+                              placeholder="Write a message to a teacher or student"
+                              required
+                            ></textarea>
+                          </label>
+                          <button class="button" type="submit">Send Message</button>
+                        </form>
+                      </section>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <h3>Wisdom School</h3>
+          <p>
+            A professional digital campus for admissions, learning plans, teacher collaboration,
+            and school-wide communication.
+          </p>
+        </div>
+        <div>
+          <h4>Admissions</h4>
+          <a href="#student-apply">Student Registration</a>
+          <a href="#teacher-apply">Teacher Application</a>
+          <a href="#portal">Portal Access</a>
+        </div>
+        <div>
+          <h4>Programs</h4>
+          <a href="#programs">Academic Tracks</a>
+          <a href="#community">School Community</a>
+          <a href="#about">About Wisdom</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:admissions@wisdom.school">admissions@wisdom.school</a>
+          <a href="mailto:principal@wisdom.school">principal@wisdom.school</a>
+          <span>Mon-Sat | 8:00 AM - 5:00 PM</span>
+        </div>
+      </footer>
+    </div>
+
+    <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
