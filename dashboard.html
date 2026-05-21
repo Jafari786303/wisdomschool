@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Majshan Web Studio Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="dashboard-body">
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Open sidebar">☰</button>
+    <button id="adminQuickOpen" class="admin-fab hidden">Admin</button>
+
+    <aside id="leftSidebar" class="left-sidebar">
+      <div id="profileCard" class="profile"></div>
+      <div class="card compact-card">
+        <h3>Workspace</h3>
+        <button id="openProjectFormBtn" class="hidden">New Website Request</button>
+        <button id="showMyProjectsBtn">My Projects</button>
+        <button id="showOpenProjectsBtn" class="hidden">Open Requests</button>
+      </div>
+      <div class="card compact-card">
+        <h3>Chats</h3>
+        <div id="chatThreads" class="thread-list"></div>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <section class="wrap panel" id="userArea">
+        <div class="dashboard-head">
+          <div>
+            <span class="eyebrow">Dashboard</span>
+            <h1>Project Control Center</h1>
+            <p id="roleOverview" class="note">Loading your workspace...</p>
+          </div>
+          <a class="secondary-link dark" href="./index.html">Home</a>
+        </div>
+
+        <div class="grid-3 stats-row">
+          <div class="stat-card"><span>Pending</span><strong id="pendingCount">0</strong></div>
+          <div class="stat-card"><span>Accepted</span><strong id="acceptedCount">0</strong></div>
+          <div class="stat-card"><span>Done / Closed</span><strong id="finishedCount">0</strong></div>
+        </div>
+
+        <div class="grid-2 dashboard-grid">
+          <form id="projectRequestForm" class="card hidden">
+            <h3>Request a Website</h3>
+            <label>Project title <input required name="title" placeholder="Business website, online store, portfolio..." /></label>
+            <label>Website type
+              <select name="siteType" required>
+                <option>Business Website</option>
+                <option>Online Store</option>
+                <option>Portfolio</option>
+                <option>Landing Page</option>
+                <option>Blog / News Website</option>
+                <option>Custom Web App</option>
+              </select>
+            </label>
+            <div class="grid-2 no-pad">
+              <label>Budget <input required name="budget" placeholder="$500 or PKR 150,000" /></label>
+              <label>Deadline <input type="date" name="deadline" /></label>
+            </div>
+            <label>Reference website or file link <input name="referenceUrl" type="url" placeholder="https://..." /></label>
+            <label>Project details <textarea required name="description" rows="6" placeholder="Describe pages, design style, features, content, payment needs, and anything important."></textarea></label>
+            <button type="submit">Submit Website Request</button>
+          </form>
+
+          <section id="projectsCard" class="card">
+            <div class="card-head"><h3 id="projectsTitle">Projects</h3><button type="button" id="refreshProjectsBtn" class="ghost small-btn">Refresh</button></div>
+            <div id="projectList" class="project-list"></div>
+          </section>
+        </div>
+
+        <section class="chat-wrap hidden" id="chatWrap">
+          <div class="chat-head"><div><h3>Project Chat</h3><p id="chatMeta">Choose a project chat</p></div><button type="button" id="closeChatBtn" class="small-btn">Close</button></div>
+          <div id="chatMessages" class="chat-messages"></div>
+          <form id="chatForm" class="chat-form">
+            <input name="message" placeholder="Write a message..." />
+            <input type="file" name="attachment" id="chatAttachment" accept="image/*,video/*,audio/*,.pdf,.doc,.docx,.zip,.rar,.txt,.psd,.ai,.fig" />
+            <button>Send</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <section class="admin hidden" id="adminPanel">
+      <div class="admin-content wrap">
+        <div class="card-head"><h2>Admin Panel</h2><button id="closeAdminBtn" class="small-btn">Close</button></div>
+        <div class="grid-2">
+          <div class="card"><h3>Users</h3><div id="adminUsers"></div></div>
+          <div class="card"><h3>All Projects</h3><div id="adminProjects"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./dashboard.js"></script>
+  </body>
+</html>
